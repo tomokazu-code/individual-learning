@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./JS/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <div v-for="addr in addrs" >{{addr}}</div><hr><hr>
+        <div v-for="(addr,index) in addrs" >{{index}} : {{addr}}</div>
+
+    </div>
+    
+</body>
+<script>
+    new Vue({
+        el:"#app",
+        data:{
+            addrs:["北京","上海","西安","成都","深圳"]
+
+        },
+        methods: {
+            
+        }
+
+    })
+</script>
+</html>

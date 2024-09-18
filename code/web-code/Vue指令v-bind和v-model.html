@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./JS/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <a :href="url">链接1</a>
+        <input type="text" v-model="url">
+    </div>
+</body>
+<script>
+    new Vue({
+        el:"#app",//vue接管区域
+        data:{
+            url:"https://www.bilibili.com/"
+        }
+    })
+</script>
+</html>
